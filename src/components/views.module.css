@@ -5,9 +5,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #FC5C7D;
-    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
-    background: linear-gradient(to right, #6A82FB, #FC5C7D);
 }
 
 .cont,.cont2 {
