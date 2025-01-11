@@ -3,6 +3,7 @@
     padding-top: 327.6768px;
     position: fixed;
     z-index: 100;
+    pointer-events: none;
 }
 
 .line {
@@ -15,6 +16,7 @@
     padding-top: 473.28px;
     position: fixed;
     z-index: 100;
+    pointer-events: none;
 }
 
 .curve,.sideCurve,.sCurve {
@@ -28,6 +30,7 @@
     padding-top: 264.48px;
     position: fixed;
     z-index: 100;
+    pointer-events: none;
 }
 
 .sCurveCont {
@@ -35,4 +38,5 @@
     padding-top: 264.48px;
     position: fixed;
     z-index: 100;
+    pointer-events: none;
 }
