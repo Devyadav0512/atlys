@@ -3,7 +3,7 @@ import styles from "./cards.module.css";
 function Card() {
   return (
     <div className={styles.cardMainCont}>
-      <div className={styles.heading}>Function: 1</div>
+      <div className={styles.heading}>::: Function: 1</div>
       <div className={styles.cont}>
         <div className={styles.inputDiv}>
           <div className={styles.label}>Equation</div>

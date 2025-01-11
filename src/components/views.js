@@ -10,7 +10,7 @@ function Views() {
   return (
     <div className={styles.mainCont}>
       <div className={styles.divCont1}>
-        <NumInput />
+        <NumInput left={true} />
       </div>
       <Line />
       <div className={styles.divCont2}>
@@ -30,7 +30,7 @@ function Views() {
       </div>
       <Line left={true} />
       <div className={styles.divCont3}>
-        <NumInput left={true} />
+        <NumInput />
       </div>
     </div>
   );
