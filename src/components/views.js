@@ -5,12 +5,22 @@ import Line from "./connectors/line";
 import Curve from "./connectors/curve";
 import SideCurve from "./connectors/sideCurve";
 import SCurve from "./connectors/sCurve";
+import { useState } from "react";
 
 function Views() {
+  const [initialVal, setInitialVal] = useState(0);
+  const [finalVal, setFinalVal] = useState(0);
+
+  const getInitialVal = (val) => {
+    if (val == "") val = "0";
+    let temp = Number(val).toString();
+    setInitialVal(temp);
+  };
+
   return (
     <div className={styles.mainCont}>
       <div className={styles.divCont1}>
-        <NumInput left={true} />
+        <NumInput left={true} onChange={getInitialVal} val={initialVal} />
       </div>
       <Line />
       <div className={styles.divCont2}>
@@ -30,7 +40,7 @@ function Views() {
       </div>
       <Line left={true} />
       <div className={styles.divCont3}>
-        <NumInput />
+        <NumInput val={finalVal} />
       </div>
     </div>
   );

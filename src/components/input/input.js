@@ -1,6 +1,6 @@
 import styles from "./input.module.css";
 
-function NumInput({ left }) {
+function NumInput({ left, onChange, val }) {
   return (
     <div className={styles.inputMainCont}>
       <div
@@ -20,7 +20,15 @@ function NumInput({ left }) {
             <input className={styles.linkRadio} type="radio" checked />
           </div>
         )}
-        <input className={styles.input} type="number" />
+        <input
+          onChange={(e) => {
+            left && onChange(e.target.value);
+          }}
+          disabled={!left}
+          value={val}
+          className={styles.input}
+          type="number"
+        />
         {left && (
           <div className={styles.finalRadio}>
             <input className={styles.linkRadio} type="radio" checked />
