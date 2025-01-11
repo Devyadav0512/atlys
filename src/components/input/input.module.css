@@ -1,0 +1,60 @@
+.inputMainCont{
+    width: 100%;
+    height: 503.44px;
+    display: flex;
+    padding-top: 313.2px;
+    justify-content: center;
+}
+
+.inputCont {
+    width: 84%;
+    height: 45px;
+    border-radius: 10px;
+    padding: 0 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.input{
+    height: 45px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.linkRadio {
+    height: 20px;
+    width: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.initialRadio {
+    height: 45px;
+    width: 40%;
+    border-right: 1.5px solid orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.finalRadio {
+    height: 45px;
+    width: 40%;
+    border-left: 1.5px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.initial {
+    border: 2.2px orange solid;
+}
+
+.final {
+    border: 2.2px green solid;
+}
