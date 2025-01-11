@@ -24,6 +24,7 @@ function NumInput({ left, onChange, val }) {
           onChange={(e) => {
             left && onChange(e.target.value);
           }}
+          style={left ? { padding: "0 0 0 10px" } : { textAlign: "right" }}
           disabled={!left}
           value={val}
           className={styles.input}
