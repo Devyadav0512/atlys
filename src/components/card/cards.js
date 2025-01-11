@@ -1,19 +1,28 @@
 import styles from "./cards.module.css";
 
-function Card() {
+function Card({ data, eq, changeEq }) {
   return (
     <div className={styles.cardMainCont}>
-      <div className={styles.heading}>::: Function: 1</div>
+      <div className={styles.heading}>{data.header}</div>
       <div className={styles.cont}>
         <div className={styles.inputDiv}>
           <div className={styles.label}>Equation</div>
-          <input className={styles.inputBox} type="text" />
+          <input
+            className={styles.inputBox}
+            type="text"
+            value={eq}
+            onChange={(e) => {
+              changeEq(e.target.value, data.equation_index);
+            }}
+            pattern="^[\+\/\^0-9x]*$"
+            required
+          />
         </div>
         <div className={styles.inputDiv}>
           <div className={styles.label}>Next Function</div>
           <select disabled className={styles.dropdown}>
             <option className={styles.dropdownOption} value="volvo">
-              Function: 2
+              {data.next_function}
             </option>
           </select>
         </div>
